@@ -1,0 +1,721 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Morse Mech-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED_RGB LED1
+U 1 1 586E067D
+P 8200 2450
+F 0 "LED1" H 8200 2800 50  0000 C CNN
+F 1 "LED_SW" H 8200 2100 50  0000 C CNN
+F 2 "Custom_Footprints:PLCC6_CREE" H 8200 2400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/90/1321%20CLY6D%20FKC-534122.pdf" H 8200 2400 50  0001 C CNN
+	1    8200 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED_RGB LED2
+U 1 1 586E07E4
+P 8200 3450
+F 0 "LED2" H 8200 3800 50  0000 C CNN
+F 1 "LED_IND" H 8200 3100 50  0000 C CNN
+F 2 "Custom_Footprints:PLCC6_CREE" H 8200 3400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/90/1321%20CLY6D%20FKC-534122.pdf" H 8200 3400 50  0001 C CNN
+	1    8200 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 586E08A2
+P 6500 4400
+F 0 "SW1" H 6650 4510 50  0000 C CNN
+F 1 "Gateron Green" H 6500 4320 50  0000 C CNN
+F 2 "Cherry_MX:CHERRY_PCB_100H" H 6500 4400 50  0001 C CNN
+F 3 "" H 6500 4400 50  0001 C CNN
+	1    6500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P1
+U 1 1 586E2414
+P 3250 1950
+F 0 "P1" H 3575 1825 50  0000 C CNN
+F 1 "USB_OTG" H 3250 2150 50  0000 C CNN
+F 2 "Custom_Footprints:WURTH_USB_MICRO_B" H 3200 1850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/445/629105136821-221118.pdf" H 3200 1850 50  0001 C CNN
+	1    3250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR12
+U 1 1 586E2C25
+P 6900 4500
+F 0 "#PWR12" H 6900 4250 50  0001 C CNN
+F 1 "GND" H 6900 4350 50  0001 C CNN
+F 2 "" H 6900 4500 50  0000 C CNN
+F 3 "" H 6900 4500 50  0000 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 586E2D55
+P 8600 3550
+F 0 "#PWR16" H 8600 3300 50  0001 C CNN
+F 1 "GND" H 8600 3400 50  0001 C CNN
+F 2 "" H 8600 3550 50  0000 C CNN
+F 3 "" H 8600 3550 50  0000 C CNN
+	1    8600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 586E2D73
+P 8600 2550
+F 0 "#PWR15" H 8600 2300 50  0001 C CNN
+F 1 "GND" H 8600 2400 50  0001 C CNN
+F 2 "" H 8600 2550 50  0000 C CNN
+F 3 "" H 8600 2550 50  0000 C CNN
+	1    8600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA16U2 MCU1
+U 1 1 586E2EFF
+P 4800 4600
+F 0 "MCU1" H 3950 5950 50  0000 C CNN
+F 1 "ATmega16u2" H 5550 3250 50  0000 C CNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 4650 4650 50  0001 C CNN
+F 3 "http://www.atmel.com/Images/doc7799.pdf" H 4900 3150 50  0001 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-ISP-6 P2
+U 1 1 586E313B
+P 5350 2150
+F 0 "P2" H 5350 2350 50  0000 C BNN
+F 1 "ICSP" H 5350 1950 50  0000 C CNN
+F 2 "Custom_Footprints:ICSP_6PIN_POGO" H 5350 950 50  0001 C CNN
+F 3 "" H 5350 950 50  0001 C CNN
+	1    5350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 586E444E
+P 2650 4300
+F 0 "Y1" H 2650 4450 40  0000 C CNN
+F 1 "16MHz" H 2650 4150 40  0000 C CNN
+F 2 "Crystals:Crystal_HC49-SD_SMD" H 2650 4300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/741/LFXTAL003237Reel-940153.pdf" H 2650 4300 50  0001 C CNN
+	1    2650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 586E476F
+P 2500 4750
+F 0 "#PWR1" H 2500 4500 50  0001 C CNN
+F 1 "GND" H 2500 4600 50  0001 C CNN
+F 2 "" H 2500 4750 50  0000 C CNN
+F 3 "" H 2500 4750 50  0000 C CNN
+	1    2500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 586E4791
+P 2800 4750
+F 0 "#PWR3" H 2800 4500 50  0001 C CNN
+F 1 "GND" H 2800 4600 50  0001 C CNN
+F 2 "" H 2800 4750 50  0000 C CNN
+F 3 "" H 2800 4750 50  0000 C CNN
+	1    2800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 586E4B3C
+P 2500 4600
+F 0 "C1" H 2525 4700 40  0000 L CNN
+F 1 "15pF" H 2525 4500 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2538 4450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c02e-2905.pdf" H 2500 4600 50  0001 C CNN
+F 4 "Mouser recommends 12-22 pF." H 2500 4600 60  0001 C CNN "Notes"
+	1    2500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 586E4B61
+P 2800 4600
+F 0 "C2" H 2825 4700 40  0000 L CNN
+F 1 "15pF" H 2825 4500 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2838 4450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c02e-2905.pdf" H 2800 4600 50  0001 C CNN
+F 4 "Mouser recommends 12-22 pF." H 2800 4600 60  0001 C CNN "Notes"
+	1    2800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 586E51A6
+P 4800 6100
+F 0 "#PWR9" H 4800 5850 50  0001 C CNN
+F 1 "GND" H 4800 5950 50  0001 C CNN
+F 2 "" H 4800 6100 50  0000 C CNN
+F 3 "" H 4800 6100 50  0000 C CNN
+	1    4800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 586E59EA
+P 3250 4600
+F 0 "C3" V 3275 4700 40  0000 C TNN
+F 1 "1uF" V 3275 4500 40  0000 C TNN
+F 2 "Capacitors_SMD:C_0603" H 3288 4450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c02e-2905.pdf" H 3250 4600 50  0001 C CNN
+	1    3250 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 586E5CC0
+P 3100 4750
+F 0 "#PWR4" H 3100 4500 50  0001 C CNN
+F 1 "GND" H 3100 4600 50  0001 C CNN
+F 2 "" H 3100 4750 50  0000 C CNN
+F 3 "" H 3100 4750 50  0000 C CNN
+	1    3100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 586E84A4
+P 3450 2350
+F 0 "#PWR5" H 3450 2100 50  0001 C CNN
+F 1 "GND" H 3450 2200 50  0001 C CNN
+F 2 "" H 3450 2350 50  0000 C CNN
+F 3 "" H 3450 2350 50  0000 C CNN
+	1    3450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 586E881F
+P 3600 5300
+F 0 "#PWR7" H 3600 5050 50  0001 C CNN
+F 1 "GND" H 3600 5150 50  0001 C CNN
+F 2 "" H 3600 5300 50  0000 C CNN
+F 3 "" H 3600 5300 50  0000 C CNN
+	1    3600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR6
+U 1 1 586E8FFA
+P 3500 3250
+F 0 "#PWR6" H 3500 3100 50  0001 C CNN
+F 1 "VCC" H 3500 3400 50  0000 C CNN
+F 2 "" H 3500 3250 50  0000 C CNN
+F 3 "" H 3500 3250 50  0000 C CNN
+	1    3500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR8
+U 1 1 586E914E
+P 4800 3100
+F 0 "#PWR8" H 4800 2950 50  0001 C CNN
+F 1 "VCC" H 4800 3250 50  0000 C CNN
+F 2 "" H 4800 3100 50  0000 C CNN
+F 3 "" H 4800 3100 50  0000 C CNN
+	1    4800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 586E93A4
+P 2800 2100
+F 0 "#PWR2" H 2800 1950 50  0001 C CNN
+F 1 "VCC" H 2800 2250 50  0000 C CNN
+F 2 "" H 2800 2100 50  0000 C CNN
+F 3 "" H 2800 2100 50  0000 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 586E9DA9
+P 3150 2500
+F 0 "R1" V 3230 2500 40  0000 C CNN
+F 1 "22" V 3150 2500 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3080 2500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 586EA1B3
+P 3250 2500
+F 0 "R2" V 3330 2500 40  0000 C CNN
+F 1 "22" V 3250 2500 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3180 2500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3250 2500 50  0001 C CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+Text Label 3150 2700 3    40   ~ 0
+USB_D-
+Text Label 3250 2700 3    40   ~ 0
+USB_D+
+Text Label 3500 5000 2    40   ~ 0
+USB_D+
+Text Label 3500 5100 2    40   ~ 0
+USB_D-
+NoConn ~ 3350 2250
+$Comp
+L GND #PWR11
+U 1 1 586F01E5
+P 5800 2350
+F 0 "#PWR11" H 5800 2100 50  0001 C CNN
+F 1 "GND" H 5800 2200 50  0001 C CNN
+F 2 "" H 5800 2350 50  0000 C CNN
+F 3 "" H 5800 2350 50  0000 C CNN
+	1    5800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR10
+U 1 1 586F026F
+P 5800 1950
+F 0 "#PWR10" H 5800 1800 50  0001 C CNN
+F 1 "VCC" H 5800 2100 50  0000 C CNN
+F 2 "" H 5800 1950 50  0000 C CNN
+F 3 "" H 5800 1950 50  0000 C CNN
+	1    5800 1950
+	1    0    0    -1  
+$EndComp
+Text Label 5800 2150 0    40   ~ 0
+MOSI
+Text Label 4900 2050 2    40   ~ 0
+MISO
+Text Label 4900 2150 2    40   ~ 0
+SCLK
+Text Label 4900 2250 2    40   ~ 0
+RESET
+Text Label 3800 3750 2    40   ~ 0
+RESET
+Text Label 6100 3600 0    40   ~ 0
+SCLK
+Text Label 6100 3700 0    40   ~ 0
+MOSI
+Text Label 6100 3800 0    40   ~ 0
+MISO
+Text Label 7450 2350 2    40   ~ 0
+LED_SW_R
+Text Label 7450 2450 2    40   ~ 0
+LED_SW_G
+Text Label 7450 2550 2    40   ~ 0
+LED_SW_B
+Text Label 6100 3900 0    40   ~ 0
+LED_SW_R
+Text Label 6100 4000 0    40   ~ 0
+LED_SW_G
+Text Label 6100 4100 0    40   ~ 0
+LED_SW_B
+$Comp
+L R R6
+U 1 1 586FE472
+P 7700 3300
+F 0 "R6" V 7780 3300 40  0000 C CNN
+F 1 "220" V 7700 3300 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 3300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 3300 50  0001 C CNN
+	1    7700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 586FE4DF
+P 7700 3450
+F 0 "R7" V 7780 3450 40  0000 C CNN
+F 1 "270" V 7700 3450 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 3450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 3450 50  0001 C CNN
+	1    7700 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R8
+U 1 1 586FE53C
+P 7700 3600
+F 0 "R8" V 7780 3600 40  0000 C CNN
+F 1 "220" V 7700 3600 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 3600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 3600 50  0001 C CNN
+	1    7700 3600
+	0    -1   -1   0   
+$EndComp
+Text Label 7450 3350 2    40   ~ 0
+LED_IND_R
+Text Label 7450 3450 2    40   ~ 0
+LED_IND_G
+Text Label 7450 3550 2    40   ~ 0
+LED_IND_B
+Text Label 6100 4900 0    40   ~ 0
+LED_IND_R
+Text Label 6100 5000 0    40   ~ 0
+LED_IND_G
+Text Label 6100 5100 0    40   ~ 0
+LED_IND_B
+$Comp
+L R R3
+U 1 1 58701283
+P 7700 2300
+F 0 "R3" V 7780 2300 40  0000 C CNN
+F 1 "220" V 7700 2300 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 2300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 2300 50  0001 C CNN
+	1    7700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58701AFE
+P 7700 2450
+F 0 "R4" V 7780 2450 40  0000 C CNN
+F 1 "270" V 7700 2450 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 2450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 2450 50  0001 C CNN
+	1    7700 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 58701C6C
+P 7700 2600
+F 0 "R5" V 7780 2600 40  0000 C CNN
+F 1 "220" V 7700 2600 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7630 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/crcwhpe3-46056.pdf" H 7700 2600 50  0001 C CNN
+	1    7700 2600
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3650 1850
+NoConn ~ 5900 3500
+NoConn ~ 5900 4200
+NoConn ~ 5900 4500
+NoConn ~ 5900 4600
+NoConn ~ 5900 4800
+NoConn ~ 5900 5300
+NoConn ~ 5900 5400
+NoConn ~ 5900 5500
+NoConn ~ 5900 5600
+NoConn ~ 5900 5700
+Text Label 3150 2300 1    40   ~ 0
+USB_CONN_D-
+Text Label 3250 2300 1    40   ~ 0
+USB_CONN_D+
+$Comp
+L R R0
+U 1 1 5870CB1E
+P 3600 3550
+F 0 "R0" V 3680 3550 40  0000 C CNN
+F 1 "20k" V 3600 3550 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 3530 3550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3600 3550 50  0001 C CNN
+	1    3600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAT250_EEPROM U1
+U 1 1 587341E6
+P 8350 5050
+F 0 "U1" H 8050 5300 50  0000 L CNN
+F 1 "EEPROM_SPI" H 8400 5300 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 8000 5000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/m95080-r-955035.pdf" H 8000 5000 50  0001 C CNN
+	1    8350 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR14
+U 1 1 587344C3
+P 8350 5450
+F 0 "#PWR14" H 8350 5200 50  0001 C CNN
+F 1 "GND" H 8350 5300 50  0000 C CNN
+F 2 "" H 8350 5450 50  0000 C CNN
+F 3 "" H 8350 5450 50  0000 C CNN
+	1    8350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR13
+U 1 1 58734C6B
+P 8350 4650
+F 0 "#PWR13" H 8350 4500 50  0001 C CNN
+F 1 "VCC" H 8350 4800 50  0000 C CNN
+F 2 "" H 8350 4650 50  0000 C CNN
+F 3 "" H 8350 4650 50  0000 C CNN
+	1    8350 4650
+	1    0    0    -1  
+$EndComp
+Text Label 7750 4950 2    40   ~ 0
+SCLK
+Text Label 7750 5050 2    40   ~ 0
+MOSI
+Text Label 7750 5150 2    40   ~ 0
+MISO
+Text Label 8950 5150 0    40   ~ 0
+SS_EEPROM
+Text Label 6100 4700 0    40   ~ 0
+SS_EEPROM
+Wire Wire Line
+	3100 4600 3100 4750
+Wire Wire Line
+	3400 4600 3400 4800
+Wire Wire Line
+	3400 4800 3700 4800
+Wire Wire Line
+	4800 6000 4800 6100
+Connection ~ 2800 4300
+Connection ~ 2500 4300
+Wire Wire Line
+	2500 4100 2500 4450
+Wire Wire Line
+	2500 4100 3700 4100
+Wire Wire Line
+	2800 4200 3700 4200
+Wire Wire Line
+	2800 4200 2800 4450
+Wire Wire Line
+	8600 2450 8600 2550
+Wire Wire Line
+	8400 2450 8600 2450
+Wire Wire Line
+	8600 3450 8600 3550
+Wire Wire Line
+	8400 3450 8600 3450
+Wire Wire Line
+	6900 4400 6900 4500
+Wire Wire Line
+	6800 4400 6900 4400
+Wire Wire Line
+	3500 4900 3700 4900
+Wire Wire Line
+	3500 3250 3500 4900
+Wire Wire Line
+	3500 4000 3700 4000
+Connection ~ 3500 4000
+Wire Wire Line
+	3450 2250 3450 2350
+Wire Wire Line
+	3700 5200 3600 5200
+Wire Wire Line
+	3600 5200 3600 5300
+Wire Wire Line
+	4800 3100 4800 3200
+Wire Wire Line
+	2800 2100 2800 2350
+Wire Wire Line
+	2800 2350 3050 2350
+Wire Wire Line
+	3050 2350 3050 2250
+Wire Wire Line
+	3500 5000 3700 5000
+Wire Wire Line
+	3500 5100 3700 5100
+Wire Wire Line
+	3150 2250 3150 2350
+Wire Wire Line
+	3250 2250 3250 2350
+Wire Wire Line
+	4900 2050 5200 2050
+Wire Wire Line
+	4900 2150 5200 2150
+Wire Wire Line
+	4900 2250 5200 2250
+Wire Wire Line
+	5450 2050 5800 2050
+Wire Wire Line
+	5450 2150 5800 2150
+Wire Wire Line
+	5450 2250 5800 2250
+Wire Wire Line
+	5800 2250 5800 2350
+Wire Wire Line
+	5800 2050 5800 1950
+Wire Wire Line
+	3600 3900 3700 3900
+Wire Wire Line
+	3600 3700 3600 3900
+Wire Wire Line
+	5900 3600 6100 3600
+Wire Wire Line
+	5900 3700 6100 3700
+Wire Wire Line
+	5900 3800 6100 3800
+Wire Wire Line
+	5900 4400 6200 4400
+Wire Wire Line
+	7850 2600 8000 2650
+Wire Wire Line
+	8000 3450 7850 3450
+Wire Wire Line
+	8000 3650 7850 3600
+Wire Wire Line
+	5900 4100 6100 4100
+Wire Wire Line
+	5900 4000 6100 4000
+Wire Wire Line
+	5900 3900 6100 3900
+Wire Wire Line
+	8450 3250 8450 3650
+Wire Wire Line
+	8450 3250 8400 3250
+Connection ~ 8450 3450
+Wire Wire Line
+	8450 3650 8400 3650
+Wire Wire Line
+	7850 3300 8000 3250
+Wire Wire Line
+	7500 3350 7450 3350
+Wire Wire Line
+	7550 3450 7450 3450
+Wire Wire Line
+	7500 3550 7450 3550
+Wire Wire Line
+	5900 5100 6100 5100
+Wire Wire Line
+	5900 5000 6100 5000
+Wire Wire Line
+	5900 4900 6100 4900
+Wire Wire Line
+	7850 2450 8000 2450
+Wire Wire Line
+	7500 2350 7450 2350
+Wire Wire Line
+	8000 2250 7850 2300
+Wire Wire Line
+	7450 2450 7550 2450
+Wire Wire Line
+	7450 2550 7500 2550
+Wire Wire Line
+	7500 2550 7550 2600
+Wire Wire Line
+	7500 2350 7550 2300
+Wire Wire Line
+	7500 3550 7550 3600
+Wire Wire Line
+	7500 3350 7550 3300
+Wire Wire Line
+	3150 2650 3150 2700
+Wire Wire Line
+	3250 2650 3250 2700
+Wire Wire Line
+	3600 3400 3600 3300
+Wire Wire Line
+	3600 3300 3500 3300
+Connection ~ 3500 3300
+Wire Wire Line
+	3800 3750 3600 3750
+Connection ~ 3600 3750
+Wire Wire Line
+	8350 5350 8350 5450
+Wire Wire Line
+	8350 4650 8350 4750
+Wire Wire Line
+	7950 4950 7750 4950
+Wire Wire Line
+	7950 5050 7750 5050
+Wire Wire Line
+	7950 5150 7750 5150
+Wire Wire Line
+	8750 4950 8950 4950
+Wire Wire Line
+	8950 5050 8750 5050
+Wire Wire Line
+	8750 5150 8950 5150
+Wire Wire Line
+	5900 4700 6100 4700
+Wire Wire Line
+	8950 4750 8950 5050
+Connection ~ 8950 4950
+$Comp
+L VCC #PWR17
+U 1 1 5873B460
+P 8950 4750
+F 0 "#PWR17" H 8950 4600 50  0001 C CNN
+F 1 "VCC" H 8950 4900 50  0000 C CNN
+F 2 "" H 8950 4750 50  0000 C CNN
+F 3 "" H 8950 4750 50  0000 C CNN
+	1    8950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2250 8500 2250
+Wire Wire Line
+	8500 2250 8500 2650
+Connection ~ 8500 2450
+Wire Wire Line
+	8500 2650 8400 2650
+Wire Wire Line
+	3450 2300 3600 2300
+Connection ~ 3450 2300
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 58748674
+P 3600 2300
+F 0 "#FLG1" H 3600 2395 50  0001 C CNN
+F 1 "PWR_FLAG" H 3600 2480 50  0000 C CNN
+F 2 "" H 3600 2300 50  0000 C CNN
+F 3 "" H 3600 2300 50  0000 C CNN
+	1    3600 2300
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
