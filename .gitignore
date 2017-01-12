@@ -8,6 +8,7 @@
 *~
 _autosave-*
 *.tmp
+Gerbers/*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -18,3 +19,6 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Exported image files
+*.png
