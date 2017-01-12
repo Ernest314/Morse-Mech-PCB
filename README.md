@@ -10,6 +10,19 @@ email me--to update this file if it gets outdated.
 [2]: https://github.com/Ernest314/Morse-Mech-PCB
 
 
+## Features
+
+- True single-key operation
+- Conforms to International Morse Code
+- High-quality mechanical switch
+- Adaptive signaling timing
+- 16.8 million-color backlighting
+- RGB indicator light
+- Onboard EEPROM settings storage
+- Full-speed USB operation
+- USB HID-compatible device
+
+
 ## Version tracking
 
 Both this repo and the [corresponding code repo](2) are pushed with the latest
