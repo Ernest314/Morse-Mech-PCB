@@ -108,7 +108,9 @@ Correspondingly, to suspend the keyboard, enter the prosign `<SK>` (mneumonic
 
 As for entering actual characters, the keyboard accepts standard [International
 Morse Code](1). This includes letters, numbers, and punctuation. There is no way
-to enter lower-case letters; all letters are entered in upper-case (in genuine
-telegraph style). **This is a feature, not a bug.**
+to enter lower-case letters; all letters are entered in upper-case (in authentic
+telegram style). **This is a feature, not a bug.** Character and word breaks are
+delimited by the standard intervals--3 and 7 times the length of a "dot",
+respectively.
 
 [11]: https://en.wikipedia.org/wiki/Prosigns_for_Morse_code
