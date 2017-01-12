@@ -70,3 +70,27 @@ discussion of repo compatibility.) [Atmel Studio 7](10) was used to program the
 board--see that repo for more details.
 
 [10]: http://www.atmel.com/microsite/atmel-studio/
+
+
+## Operating instructions
+
+*Finally! What you were waiting for!*
+
+As a *true* Morse code keyboard (there is **a single switch**, not two like
+with many other keyboards), there is some additional setup that is needed to run
+the board. For additional details (e.g. the different indicator light meanings),
+reference [the code repo](2) for this board.
+
+In order to start sending data to the computer, the keyboard needs to first be
+placed into "active" mode. This consists of entering the [prosign](11) `<CT>`
+(mneumonic "copy this"). Behind the scenes, this allows the microcontroller to
+figure out the lengths of the operator's particular timings for dots and dashes.
+Correspondingly, to suspend the keyboard, enter the prosign `<SK>` (mneumonic
+"silence key").
+
+As for entering actual characters, the keyboard accepts standard [International
+Morse Code](1). This includes letters, numbers, and punctuation. There is no way
+to enter lower-case letters; all letters are entered in upper-case (in genuine
+telegraph style). **This is a feature, not a bug.**
+
+[11]: https://en.wikipedia.org/wiki/Prosigns_for_Morse_code
