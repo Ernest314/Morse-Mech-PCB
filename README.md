@@ -78,6 +78,11 @@ tape, or just by sandwiching the corners of the PCB.
 The AVR can be programmed with any AVR programmer (compatible with ATmegas). The
 initial run of the boards were programmed with an Atmel-ICE programmer. (The
 specific AVR that the programmer should be compatible with is the `ATmega16u2`.)
+The AVR is interfaced with a standard 6-pin ICSP header, with the square pad
+denoting "pad 1". The pads provided on the board are not meant to have a
+shrouded header soldered on; instead, a Pogo pin <-> ICSP adapter was used to
+program the AVR.
+
 Again, the code for the board can be found in [its own repo](2). (See above
 discussion of repo compatibility.) [Atmel Studio 7](10) was used to program the
 board--see that repo for more details.
