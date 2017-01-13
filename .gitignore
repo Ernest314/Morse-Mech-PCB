@@ -1,5 +1,9 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 
+# Exported files
+*.pdf
+Gerbers/*
+
 # Temporary files
 *.000
 *.bak
@@ -8,7 +12,6 @@
 *~
 _autosave-*
 *.tmp
-Gerbers/*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -17,9 +20,9 @@ Gerbers/*
 *.dsn
 *.ses
 
-# Exported BOM files
+# BOM files
 *.xml
 *.csv
 
-# Exported image files
+# Image files
 *.png
