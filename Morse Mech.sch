@@ -148,8 +148,8 @@ U 1 1 586E444E
 P 2650 4300
 F 0 "Y1" H 2650 4450 40  0000 C CNN
 F 1 "16MHz" H 2650 4150 40  0000 C CNN
-F 2 "Crystals:Crystal_HC49-SD_SMD" H 2650 4300 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/741/LFXTAL003237Reel-940153.pdf" H 2650 4300 50  0001 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 2650 4300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/741/LFXTAL003240Bulk-940314.pdf" H 2650 4300 50  0001 C CNN
 	1    2650 4300
 	1    0    0    -1  
 $EndComp
